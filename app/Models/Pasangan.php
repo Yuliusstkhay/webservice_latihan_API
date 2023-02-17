@@ -10,13 +10,13 @@ class Pasangan extends Model{
     protected $fillable=['pria','wanita'];
 
     /**
-     * Untuk menunjukkan pasangan romantis anugrah Tuhan Yesus Kristus
+     * Untuk menunjukkan pasangan romantis anugerah Tuhan Yesus Kristus
      * 
      * @author by CINTA
      */
     function pasangan_romantis(){
         // return '{"YusChika":"Yulius Septianto & Yessica Tamara"}';
         // return ['Yulius'=>'Yessica'];
-        return DB::table('pasangan')->where('cowok','=','Yulius');
+        return(DB::table('pasangan')->where('pria','=','Yulius')->where('love_id','=','1')->get());
     }
 }

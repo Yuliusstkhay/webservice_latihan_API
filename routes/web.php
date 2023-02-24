@@ -3,6 +3,7 @@
 /** @var \Laravel\Lumen\Routing\Router $router */
 
 use App\Http\Controllers\PasanganController;
+use App\Models\Pasangan;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ use App\Http\Controllers\PasanganController;
 // });
 $router->get('/','PasanganController@index');
 $router->post('/','PasanganController@store');
+$router->put('/','PasanganController@update');

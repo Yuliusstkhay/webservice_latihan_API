@@ -19,12 +19,16 @@ class PasanganController extends Controller{
         // return 'halo';
     }
     function store(Request $request){
-        Pasangan::create($request->all());
+        // Pasangan::create($request->all());
         // $pasangan=new Pasangan();
         // $pasangan->create($request->all());
         // print_r($request->all());
-        return Pasangan::all();
+        // return Pasangan::all();
+        return $request;
         // DB::rollBack();
         // print_r(Config::get('database.connections.mysql.timezone'));
+    }
+    function update(Request $request){
+        return $request;
     }
 }
